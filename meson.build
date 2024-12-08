@@ -2,7 +2,7 @@ project('linmath.h', 'c',
   version: '1.0',
   license: 'MIT')
 
-declare_dependency(
+linmath_dep = declare_dependency(
   compile_args: ['-funroll-loops'],
   link_args: ['-lm'],
   include_directories: './')
